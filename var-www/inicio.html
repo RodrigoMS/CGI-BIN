@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Início</title>
+  <script class="jsbin" src="jquery.js"></script>
+</head>
+<body><br/>
+  <!--Chama o arquivo e envia dados pelo post.-->
+  <center>
+    <h1>Informações do servidor</h1>
+    <a href="#" onclick="$( '#p1' ).slideToggle( 500 )">Localizar arquivo ou pasta</a>
+      <div id="p1" style="display: none;"><br/>
+      <form method="post" action="/cgi-bin/Processos.cgi">
+        <input type="text" name="1nome" required placeholder="ex: cgi-bin">
+        <input type="submit" value="Localizar">
+      </form>
+    </div>
+    <p></p>
+
+    <a href="#" onclick="$( '#p2' ).slideToggle( 500 )">Últimos logins dos usuários</a>
+      <div id="p2" style="display: none;"><br/>
+      <form method="post" action="/cgi-bin/Processos.cgi">
+        <input type="number" name="2nome" required placeholder="Digite a quantidade">
+        <input type="submit" value="Listar">
+      </form>
+    </div>
+    <p></p>
+
+    <a href="#" onclick="$( '#p4' ).slideToggle( 500 )">Informações gerais</a>
+      <div id="p4" style="display: none;"><br/>
+      <form method="post" action="/cgi-bin/Processos.cgi">
+        <input type="submit" value="Listar" name="4name">
+      </form>
+    </div>
+    <p></p>
+    
+    <a href="#" onclick="$( '#p3' ).slideToggle( 500 )">Manual dos comandos</a>
+      <div id="p3" style="display: none;"><br/>
+      <form method="post" action="/cgi-bin/Processos.cgi">
+        <input type="text" name="3nome" required placeholder="ex: sudo">
+        <input type="submit" value="Procurar">
+      </form>
+    </div>
+    <p></p>
+
+</center>
+</body>
+</html>
