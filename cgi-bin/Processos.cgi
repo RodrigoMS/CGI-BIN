@@ -3,7 +3,7 @@
   
   echo 'content-type: text/html'
   echo ''
-  # O echo aviza o que vem antes como cabeçalho, 
+  # O echo avisa o que vem antes como cabeçalho, 
   # no caso ele enviará as tags html ao browser.
   echo
   echo '<html> 
